@@ -1,0 +1,79 @@
+<div class="hero" style="background-image:url({{'bg.jpg'|assets(true)}})">
+    <div>
+        <h1>Css Styles & Components</h1>
+    </div>
+</div>
+
+<div style="padding: 0 20px; position:relative;">
+
+    <h2 style="text-align:left;">Hero Component</h2>
+
+    <h3 style="text-align:left;">Code</h3>
+
+    {% highlight %}
+    <div class="hero" style="background-image:url({% verbatim %}{{'bg.jpg'|assets(true)}}{% endverbatim %})">
+        <div>
+            <h1>Hero Title</h1>
+            <h2>Hero Sub Title</h2>
+        </div>
+    </div>
+    {% endhighlight %}
+
+
+    <h3 style="text-align:left;">Preview</h3>
+
+    <div class="hero" style="background-image:url({{'bg.jpg'|assets(true)}})">
+        <div>
+            <h1>Hero Title</h1>
+            <h2>Hero Sub Title</h2>
+        </div>
+    </div>
+
+    <h2 style="text-align:left;">Row Flowers</h2>
+
+    <h3 style="text-align:left;">Code</h3>
+
+    {% highlight %}
+    {% verbatim %}
+    <div class="bgpink">
+        <h3>Wonderful</h3>
+        <h4>A flower who looks good</h4>
+        <div class="rowflowers">
+            <div style="background-image:url({{ 'fl1.jpg'|assets(true) }})">
+            <div>Lorem Ipsum</div>
+            </div>
+            <div style="background-image:url({{ 'fl2.jpg'|assets(true) }})">
+            <div>Lorem Ipsum</div>
+            </div>
+            <div style="background-image:url({{ 'fl3.jpg'|assets(true) }})">
+            <div>Lorem Ipsum</div>
+            </div>
+            <div style="background-image:url({{ 'fl4.jpg'|assets(true) }})">
+            <div>Lorem Ipsum</div>
+            </div>
+        </div>
+    </div>
+    {% endverbatim %}
+    {% endhighlight %}
+
+    <h3 style="text-align:left;">Preview</h3>
+
+    <div class="bgpink">
+        <h3>Wonderful</h3>
+        <h4>A flower who looks good</h4>
+        <div class="rowflowers">
+            <div style="background-image:url({{ 'fl1.jpg'|assets(true) }})">
+            <div>Lorem Ipsum</div>
+            </div>
+            <div style="background-image:url({{ 'fl2.jpg'|assets(true) }})">
+            <div>Lorem Ipsum</div>
+            </div>
+            <div style="background-image:url({{ 'fl3.jpg'|assets(true) }})">
+            <div>Lorem Ipsum</div>
+            </div>
+            <div style="background-image:url({{ 'fl4.jpg'|assets(true) }})">
+            <div>Lorem Ipsum</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,261 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #1b1b1b;
+  background-size: contain;
+  background-position: top right;
+  background-attachment: fixed;
+}
+body .intro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .intro > div:first-child {
+  position: absolute;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  inset: 0;
+  backdrop-filter: blur(10px);
+  z-index: -1;
+}
+body .intro > div:first-child:after {
+  content: "";
+  position: absolute;
+  backdrop-filter: blur(10px);
+  inset: 0;
+}
+body .intro h1 {
+  font-family: "Mr De Haviland", cursive;
+  font-size: 85px;
+  font-weight: 400;
+  color: white;
+}
+body .intro h2 {
+  font-size: 35px;
+  margin: 0;
+  font-weight: 100;
+  color: white;
+  font-family: "Lora", sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  font-style: italic;
+}
+body .intro .godown {
+  text-align: center;
+  margin-top: 30px;
+}
+body .intro .godown a {
+  cursor: pointer;
+}
+@keyframes sliding {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(25px);
+  }
+}
+body .intro .godown a img {
+  width: 20px;
+  animation: sliding 1s ease infinite alternate-reverse;
+}
+body .bgpink {
+  padding: 50px 20px;
+  background-color: #fff0e9;
+}
+body .quote {
+  padding: 50px 20px;
+}
+body .hero {
+  background-size: cover;
+  background-position: center;
+}
+body .hero > div {
+  padding: 50px 20px;
+  padding: 50px 20px;
+  backdrop-filter: blur(3px) brightness(0.8);
+  color: white;
+}
+body .hero > div h1 {
+  font-family: "Mr De Haviland", cursive;
+  font-size: 85px;
+  font-weight: 400;
+  color: white;
+  margin: 0;
+  text-shadow: 6px 2px 7px black;
+}
+body .hero > div h2 {
+  font-size: 35px;
+  margin: 0;
+  font-weight: 100;
+  color: white;
+  font-family: "Lora", sans-serif;
+  text-transform: capitalize;
+  text-align: left;
+  font-style: italic;
+}
+body h2 {
+  font-size: 35px;
+  font-weight: 100;
+  font-family: "Lora", sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  font-style: italic;
+}
+body h3 {
+  margin: 0;
+  font-family: "Mr De Haviland", cursive;
+  font-size: 70px;
+  font-weight: 400;
+  text-align: center;
+  font-style: italic;
+}
+body h4 {
+  font-size: 35px;
+  margin: 0;
+  font-weight: 100;
+  font-family: "Lora", sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  font-style: italic;
+}
+body nav.menu {
+  position: sticky;
+  top: 0;
+  width: calc(100% - 30px);
+  backdrop-filter: blur(15px);
+  padding: 15px;
+  color: #1b1b1b;
+  display: flex;
+  justify-content: space-evenly;
+  background: #ffe4e182;
+  z-index: 1000;
+}
+body nav.menu a {
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+body nav.menu a:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  height: 1px;
+  width: 0%;
+  background: #1b1b1b;
+  transition: width 0.6s ease;
+}
+body nav.menu a:hover:after {
+  width: 100%;
+}
+body .rowflowers {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+body .rowflowers > div {
+  margin-top: 20px;
+  width: clamp(400px, 20%, 20%);
+  background: white;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+body .rowflowers > div > div {
+  transition: transform 0.8s ease, opacity 0.8s ease;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  transform: translateY(100%);
+  backdrop-filter: brightness(0.6) blur(2px);
+  color: white;
+  font-size: 25px;
+}
+body .rowflowers > div:hover > div {
+  transition: transform 0.3s ease, opacity 0.4s ease;
+  transform: translateY(0%);
+  opacity: 1;
+}
+body .overlay {
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  inset: 0;
+}
+body .bloc {
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  inset: 0;
+}
+body .bloc > .content {
+  backdrop-filter: brightness(0.5);
+  text-align: center;
+  padding: 50px;
+}
+body footer {
+  background-color: #1b1b1b;
+  color: white;
+  display: flex;
+  padding: 50px 50px 25px 50px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+body footer > div {
+  width: clamp(250px, 25% - 40px, 25% - 40px);
+  margin-bottom: 25px;
+  padding: 0 20px;
+}
+body footer > div h5 {
+  margin: 0;
+  font-family: "Mr De Haviland", cursive;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: center;
+}
+body .bottom-bar {
+  background: black;
+  color: #999;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffaeae;
+  border-radius: 10px;
+  transition: background 0.6s ease;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ff5959;
+}
