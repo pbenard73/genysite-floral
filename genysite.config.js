@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 module.exports = {
-  homepage: "file:///home/patrick/Workspace/themes/genysite-floral/docs/",
+  homepage: "https://pbenard73.github.io/genysite-floral/",
   react:true,
   index:'index',
   App: `${__dirname}/src/template/App.js`,
